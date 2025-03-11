@@ -95,6 +95,7 @@ public class DigiCustomerLoginController {
                     response.setMobileNumber(respUserValidateData.getMobileNumber());
                     response.setEmailId(respUserValidateData.getEmailId());
                     response.setToken(createToken);
+                    System.out.println("============" + request);
                 } else {
                     response.statusCode = ResponseConstants.failedCode;
                     response.statusMessage = ResponseConstants.INVALID_USER_NAME_AND_PASSWORD;
